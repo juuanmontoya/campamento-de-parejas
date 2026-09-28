@@ -352,138 +352,197 @@ export default function Home() {
         </div>
       </section>
 
+      
+   
+      
       {/* =========================================================
-          HOTEL
+          HOTEL TOCAREMA — PARA DOS
       ========================================================= */}
-      <section className="bg-slate-950 px-6 py-20 text-white sm:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-300">
-                Nuestro lugar
-              </p>
+      <section className="relative overflow-hidden bg-[#B9DED4] px-5 py-20 text-[#253E35] sm:px-8 sm:py-28">
 
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+        <div className="mx-auto max-w-7xl">
+
+          {/* Encabezado */}
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#527D6D] sm:text-sm">
+              Nuestro destino
+            </p>
+
+            <h2 className="mt-4 text-4xl font-semibold leading-tight sm:text-6xl">
+              Tres días para ustedes.
+              <span className="block text-[#527D6D]">
+                Un lugar para disfrutar.
+              </span>
+            </h2>
+
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#476B5E] sm:text-lg sm:leading-8">
+              Nos vamos a Girardot para vivir PARA DOS en un entorno
+              tropical, rodeados de naturaleza, descanso y momentos
+              especiales para compartir.
+            </p>
+          </div>
+
+          {/* Fotografía principal real del hotel */}
+          <div className="relative mt-12 overflow-hidden rounded-[2rem] shadow-xl sm:mt-16 sm:rounded-[3rem]">
+
+            <img
+              src="https://www.hoteltocarema.com/assets/img/Hotel_Tocarema_7.jpg"
+              alt="Vista aérea del Hotel Tocarema en Girardot, sus piscinas y jardines"
+              className="h-[380px] w-full object-cover sm:h-[550px] lg:h-[650px]"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-[#172F26]/80 via-transparent to-transparent" />
+
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-white sm:p-12">
+              <span className="inline-flex rounded-full bg-[#F0E1CE] px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#345B4A]">
+                16 — 18 de octubre de 2026
+              </span>
+
+              <h3 className="mt-5 text-3xl font-semibold sm:text-5xl">
                 Hotel Tocarema
-              </h2>
+              </h3>
 
-              <p className="mt-2 text-xl text-rose-200">
+              <p className="mt-2 text-base text-white/90 sm:text-lg">
                 Girardot · Cundinamarca
               </p>
+            </div>
+          </div>
 
-              <p className="mt-7 text-lg leading-8 text-slate-300">
-                Este año nos vamos a Girardot para vivir juntos un fin de
-                semana diferente, en un lugar pensado para descansar,
-                disfrutar y compartir.
+          {/* Instalaciones */}
+          <div className="mt-16 grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#527D6D]">
+                El lugar de nuestra experiencia
               </p>
 
-              <div className="mt-8 grid grid-cols-2 gap-3">
-                {[
-                  "🏊 Piscinas",
-                  "🌿 Zonas verdes",
-                  "🛏️ Habitaciones",
-                  "🍽️ Restaurante",
-                  "🧖 Sauna",
-                  "🎾 Canchas",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
+              <h3 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
+                Un ambiente tropical para salir de la rutina.
+              </h3>
+
+              <p className="mt-5 text-base leading-7 text-[#476B5E] sm:text-lg sm:leading-8">
+                El Hotel Tocarema combina espacios de descanso,
+                instalaciones recreativas y zonas rodeadas de vegetación
+                para disfrutar de una pausa diferente.
+              </p>
 
               <a
-                href="#reserva"
-                className="mt-9 inline-flex rounded-full bg-rose-500 px-7 py-4 font-semibold text-white transition hover:bg-rose-600"
+                href="https://hoteltocarema.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-7 inline-flex items-center gap-2 font-semibold text-[#345B4A] underline underline-offset-4 transition hover:text-[#527D6D]"
               >
-                Quiero vivir esta experiencia
+                Conoce el hotel
+                <span>↗</span>
               </a>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <img
-                src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1000&q=85"
-                alt="Piscina"
-                className="h-64 w-full rounded-3xl object-cover sm:h-80"
-              />
 
-              <img
-                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=85"
-                alt="Habitación de hotel"
-                className="h-64 w-full rounded-3xl object-cover sm:h-80"
-              />
+              <div className="rounded-3xl bg-[#F0E1CE] p-5 sm:p-7">
+                <span className="text-3xl">🏊</span>
+                <h4 className="mt-4 font-semibold text-[#345B4A]">
+                  Piscinas y jacuzzis
+                </h4>
+                <p className="mt-2 text-sm leading-6 text-[#527D6D]">
+                  Espacios para refrescarse y disfrutar del clima de Girardot.
+                </p>
+              </div>
 
-              <img
-                src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1000&q=85"
-                alt="Zona exterior"
-                className="h-64 w-full rounded-3xl object-cover sm:h-80"
-              />
+              <div className="rounded-3xl bg-white/60 p-5 sm:p-7">
+                <span className="text-3xl">🌿</span>
+                <h4 className="mt-4 font-semibold text-[#345B4A]">
+                  Naturaleza
+                </h4>
+                <p className="mt-2 text-sm leading-6 text-[#527D6D]">
+                  Zonas verdes, jardines y sendero ecológico.
+                </p>
+              </div>
 
-              <img
-                src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1000&q=85"
-                alt="Hotel"
-                className="h-64 w-full rounded-3xl object-cover sm:h-80"
-              />
+              <div className="rounded-3xl bg-white/60 p-5 sm:p-7">
+                <span className="text-3xl">🛏️</span>
+                <h4 className="mt-4 font-semibold text-[#345B4A]">
+                  Habitaciones
+                </h4>
+                <p className="mt-2 text-sm leading-6 text-[#527D6D]">
+                  Opciones de alojamiento con aire acondicionado y Wi-Fi.
+                </p>
+              </div>
+
+              <div className="rounded-3xl bg-[#F0E1CE] p-5 sm:p-7">
+                <span className="text-3xl">🍽️</span>
+                <h4 className="mt-4 font-semibold text-[#345B4A]">
+                  Restaurante
+                </h4>
+                <p className="mt-2 text-sm leading-6 text-[#527D6D]">
+                  Instalaciones de restaurante y espacios para compartir.
+                </p>
+              </div>
+
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* =========================================================
-          GALLERY
-      ========================================================= */}
-      <section className="px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-rose-500">
-              Así se siente
+          {/* Segunda fotografía: jacuzzi */}
+          <div className="mt-16 grid gap-8 overflow-hidden rounded-[2rem] bg-[#F0E1CE] p-5 sm:p-8 lg:grid-cols-2 lg:items-center lg:gap-12 lg:p-12">
+
+            <div className="overflow-hidden rounded-3xl">
+              <img
+                src="https://cdn-zen.readytotrip.com/t/1024x768/content/d5/2c/d52c707d416eff636ce219c49f90336b6ac64669.jpeg"
+                alt="Jacuzzi exterior rodeado de vegetación tropical en el Hotel Tocarema"
+                className="h-[280px] w-full object-cover sm:h-[400px]"
+                loading="lazy"
+              />
+            </div>
+
+            <div className="py-4">
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#527D6D]">
+                Un respiro para los dos
+              </p>
+
+              <h3 className="mt-4 text-3xl font-semibold leading-tight text-[#345B4A] sm:text-4xl">
+                Menos afán.
+                <span className="block">Más momentos juntos.</span>
+              </h3>
+
+              <p className="mt-5 leading-7 text-[#527D6D] sm:text-lg sm:leading-8">
+                Imaginen dejar por unos días las ocupaciones a un lado,
+                disfrutar de un ambiente diferente y dedicar tiempo
+                a la persona con quien comparten la vida.
+              </p>
+
+              <a
+                href="#reserva"
+                className="mt-7 inline-flex rounded-full bg-[#345B4A] px-7 py-4 font-semibold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-[#264737]"
+              >
+                Quiero vivir PARA DOS
+              </a>
+            </div>
+          </div>
+
+          {/* Ubicación */}
+          <div className="mt-16 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#527D6D]">
+              Nos encontramos en
             </p>
 
-            <h2 className="mt-3 text-3xl font-semibold sm:text-5xl">
-              Un fin de semana para disfrutar juntos
-            </h2>
+            <h3 className="mt-3 text-2xl font-semibold text-[#345B4A] sm:text-3xl">
+              Girardot, Cundinamarca
+            </h3>
+
+            <p className="mt-3 text-sm text-[#527D6D] sm:text-base">
+              Hotel Tocarema · Carrera 5 #19-41
+            </p>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Hotel+Tocarema+Girardot"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex rounded-full border border-[#527D6D]/40 bg-white/40 px-7 py-3 font-semibold text-[#345B4A] transition hover:bg-white/70"
+            >
+              Ver ubicación en Google Maps ↗
+            </a>
           </div>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <img
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=85"
-              alt="Naturaleza"
-              className="h-72 w-full rounded-3xl object-cover"
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85"
-              alt="Hotel"
-              className="h-72 w-full rounded-3xl object-cover"
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1501117716987-c8e1ecb210a7?auto=format&fit=crop&w=1200&q=85"
-              alt="Habitación"
-              className="h-72 w-full rounded-3xl object-cover"
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1470214304380-aadaedcfff1b?auto=format&fit=crop&w=1200&q=85"
-              alt="Naturaleza"
-              className="h-72 w-full rounded-3xl object-cover"
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85"
-              alt="Relajación"
-              className="h-72 w-full rounded-3xl object-cover"
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85"
-              alt="Hotel"
-              className="h-72 w-full rounded-3xl object-cover"
-            />
-          </div>
         </div>
       </section>
 
