@@ -3,10 +3,10 @@
 import { FormEvent, useState } from "react";
 import { supabase } from "@/lib/supabase";
 
-const WHATSAPP_NUMBER = "573000000000";
+const WHATSAPP_NUMBER = "573133343648";
 
 const whatsappLink = (message: string) =>
-  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  `https://wa.me/${573133343648}?text=${encodeURIComponent(message)}`;
 
 export default function Home() {
   const [nombre1, setNombre1] = useState("");
