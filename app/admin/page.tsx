@@ -9,6 +9,8 @@ type Preinscripcion = {
   nombre_persona_1: string;
   nombre_persona_2: string;
   whatsapp: string;
+  contacto_emergencia: string;
+  telefono_emergencia: string;
   tipo_asistente: string | null;
   anos_juntos: string | null;
   requerimientos: string | null;
@@ -1339,6 +1341,38 @@ export default function AdminPage() {
                   </div>
                 </div>
               </div>
+
+{/* CONTACTO DE EMERGENCIA */}
+<div>
+  <h3 className="text-sm font-semibold text-slate-900">
+    Contacto de emergencia
+  </h3>
+
+  <div className="mt-3 grid grid-cols-2 gap-3">
+    <div className="rounded-xl bg-red-50 p-4">
+      <p className="text-xs text-red-500">
+        Nombre
+      </p>
+
+      <p className="mt-1 text-sm font-medium text-slate-800">
+        {parejaSeleccionada.contacto_emergencia || "—"}
+      </p>
+    </div>
+
+    <div className="rounded-xl bg-red-50 p-4">
+      <p className="text-xs text-red-500">
+        Teléfono
+      </p>
+
+      <a
+        href={`tel:${parejaSeleccionada.telefono_emergencia}`}
+        className="mt-1 block text-sm font-medium text-slate-800 hover:underline"
+      >
+        {parejaSeleccionada.telefono_emergencia || "—"}
+      </a>
+    </div>
+  </div>
+</div>
 
               {/* ESTADO */}
               <div>
